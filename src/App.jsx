@@ -7,7 +7,7 @@ import addSymbol from "./resources/add.png";
 import deleteSymbol from "./resources/delete.png";
 import sendSymbol from "./resources/send.png";
 
-let socket = io("");
+let socket = io("https://chattiluring-back.herokuapp.com");
 
 function App() {
   const [rooms, setRooms] = useState([]);
