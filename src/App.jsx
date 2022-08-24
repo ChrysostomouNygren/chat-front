@@ -7,7 +7,7 @@ import addSymbol from "./resources/add.png";
 import deleteSymbol from "./resources/delete.png";
 import sendSymbol from "./resources/send.png";
 
-let socket = io("http://localhost:4000");
+let socket = io("");
 
 function App() {
   const [rooms, setRooms] = useState([]);
