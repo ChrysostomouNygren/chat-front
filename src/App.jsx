@@ -66,11 +66,15 @@ function App() {
       socket.emit("ready", (response) => {
         console.log(response.status);
       });
+      // loggar hur många rum som helst, varför fler än 2?
       socket.on("get_rooms", (data) => {
         setRooms(data);
+        console.log(data)
       });
+      // loggar också hur många som helst, wtf is going on?
       socket.on("get_messages", (data) => {
         setMessages(data);
+        console.log(data)
       });
     });
   }, []);
@@ -167,6 +171,9 @@ function App() {
     marginTop: "0px",
     marginBottom: "2px",
   };
+
+  // delete + skapa rum = krasch
+  // skicka meddelande = krasch
 
   return (
     <div style={boxStyle}>
