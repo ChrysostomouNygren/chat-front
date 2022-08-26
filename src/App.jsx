@@ -227,7 +227,7 @@ function App() {
           <div>
             <div>
               <p style={dateStyle}>{message.date}</p>
-              <p style={userInfoStyle}>{message.user} says:</p>
+              <p style={userInfoStyle}>{message.name} says:</p>
             </div>
             <p style={messageStyle}>{message.value}</p>
           </div>
